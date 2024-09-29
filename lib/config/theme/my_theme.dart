@@ -9,7 +9,10 @@ class MyTheme {
       primaryColor: ColorsManager.goldColor,
       appBarTheme: const AppBarTheme(
         titleTextStyle: TextStyle(
-            fontSize: 22, fontWeight: FontWeight.w700, color: Colors.black),
+            fontSize: 22,
+            fontWeight: FontWeight.w700,
+            color: Colors.black,
+            fontFamily: 'ElMessiri-Bold.ttf'),
         backgroundColor: Colors.transparent,
         elevation: 0,
         centerTitle: true,
@@ -33,6 +36,13 @@ class MyTheme {
           showSelectedLabels: true,
           showUnselectedLabels: false,
           elevation: 20),
+      bottomSheetTheme: BottomSheetThemeData(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(14),
+        ),
+        elevation: 18,
+        backgroundColor: Colors.white,
+      ),
       textTheme: const TextTheme(
           titleSmall: TextStyle(
             fontSize: 25,
@@ -40,25 +50,33 @@ class MyTheme {
             fontWeight: FontWeight.w400,
           ),
           bodySmall: TextStyle(
-              fontSize: 20, fontWeight: FontWeight.w400, color: Colors.black)));
+              fontSize: 20, fontWeight: FontWeight.w400, color: Colors.black),
+          displaySmall: TextStyle(
+              fontSize: 14, fontWeight: FontWeight.w400, color: Colors.black),
+          labelSmall: TextStyle(
+              fontSize: 16, color: Colors.black, fontWeight: FontWeight.w700),
+          bodyMedium: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.w700,
+              color: ColorsManager.goldColor)));
 
-  static final ThemeData darkTheme = ThemeData(
-      primaryColor: const Color(0xFFFACC1D),
-      appBarTheme: const AppBarTheme(
-        titleTextStyle: TextStyle(
-            fontSize: 22, fontWeight: FontWeight.w700, color: Colors.black),
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        centerTitle: true,
-      ),
-      scaffoldBackgroundColor: Colors.transparent,
-      bottomNavigationBarTheme: BottomNavigationBarThemeData(
-          selectedItemColor: Colors.black,
-          selectedIconTheme: IconThemeData(
-            size: 36,
-          ),
-          unselectedItemColor: Colors.white,
-          showSelectedLabels: true,
-          showUnselectedLabels: false,
-          elevation: 20));
+// static final ThemeData darkTheme = ThemeData(
+//     primaryColor: const Color(0xFFFACC1D),
+//     appBarTheme: const AppBarTheme(
+//       titleTextStyle: TextStyle(
+//           fontSize: 22, fontWeight: FontWeight.w700, color: Colors.black),
+//       backgroundColor: Colors.transparent,
+//       elevation: 0,
+//       centerTitle: true,
+//     ),
+//     scaffoldBackgroundColor: Colors.transparent,
+//     bottomNavigationBarTheme: BottomNavigationBarThemeData(
+//         selectedItemColor: Colors.black,
+//         selectedIconTheme: IconThemeData(
+//           size: 36,
+//         ),
+//         unselectedItemColor: Colors.white,
+//         showSelectedLabels: true,
+//         showUnselectedLabels: false,
+//         elevation: 20));
 }

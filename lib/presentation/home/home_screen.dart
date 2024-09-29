@@ -33,7 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
               image: AssetImage(AssetsManager.lightMainBg), fit: BoxFit.fill)),
       child: Scaffold(
         appBar: AppBar(
-          title: const Text(StringsManager.appTitle),
+          title: const Text('القران'),
         ),
         bottomNavigationBar: BottomNavigationBar(
             onTap: (index) {
