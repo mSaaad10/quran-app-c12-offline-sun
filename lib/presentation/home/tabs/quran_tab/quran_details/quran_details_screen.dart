@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:quran_app_c12_offline/config/theme/my_theme.dart';
 import 'package:quran_app_c12_offline/core/utils/assets_manager.dart';
 import 'package:quran_app_c12_offline/presentation/home/tabs/quran_tab/quran_details/quran_widget.dart';
 import 'package:quran_app_c12_offline/presentation/home/tabs/quran_tab/widgets/quran_title_widget/quran_title_widget.dart';
@@ -29,9 +30,12 @@ class _QuranDetailsScreenState extends State<QuranDetailsScreen> {
     SuraArgs args = ModalRoute.of(context)?.settings.arguments as SuraArgs;
     if (verses.isEmpty) readFile(args.index);
     return Container(
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage(AssetsManager.lightMainBg), fit: BoxFit.cover)),
+              image: AssetImage(MyTheme.isDarkEnabled
+                  ? AssetsManager.darkMainBg
+                  : AssetsManager.lightMainBg),
+              fit: BoxFit.fill)),
       child: Scaffold(
         appBar: AppBar(title: Text(args.suraName)),
         body: verses.isEmpty

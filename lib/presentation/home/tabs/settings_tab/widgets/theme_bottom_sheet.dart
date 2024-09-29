@@ -17,18 +17,13 @@ class ThemeBottomSheet extends StatelessWidget {
                 'Light',
                 style: Theme.of(context).textTheme.bodyMedium,
               ),
-              Icon(Icons.check,
-                  size: 30, color: Theme.of(context).primaryColor),
+              Icon(Icons.check),
             ],
           ),
           SizedBox(
             height: 18,
           ),
-          Text('Dark',
-              style: Theme.of(context)
-                  .textTheme
-                  .bodyMedium
-                  ?.copyWith(color: Colors.black)),
+          Text('Dark', style: Theme.of(context).textTheme.displayMedium),
         ],
       ),
     );
