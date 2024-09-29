@@ -14,7 +14,7 @@ class ChapterNameWidget extends StatelessWidget {
         decoration: BoxDecoration(
             border: Border.symmetric(
           horizontal:
-              BorderSide(color: Theme.of(context).primaryColor, width: 2),
+              BorderSide(color: Theme.of(context).dividerColor, width: 2),
         )),
         child: IntrinsicHeight(
           child: Row(
@@ -38,7 +38,7 @@ class ChapterNameWidget extends StatelessWidget {
               Expanded(
                 flex: 1,
                 child: VerticalDivider(
-                  color: Theme.of(context).primaryColor,
+                  color: Theme.of(context).dividerColor,
                   width: 2,
                   thickness: 2,
                 ),

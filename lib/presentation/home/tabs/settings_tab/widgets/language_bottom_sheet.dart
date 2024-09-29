@@ -17,18 +17,13 @@ class LanguageBottomSheet extends StatelessWidget {
                 'English',
                 style: Theme.of(context).textTheme.bodyMedium,
               ),
-              Icon(Icons.check,
-                  size: 30, color: Theme.of(context).primaryColor),
+              Icon(Icons.check),
             ],
           ),
           SizedBox(
             height: 18,
           ),
-          Text('Arabic',
-              style: Theme.of(context)
-                  .textTheme
-                  .bodyMedium
-                  ?.copyWith(color: Colors.black)),
+          Text('Arabic', style: Theme.of(context).textTheme.displayMedium),
         ],
       ),
     );
